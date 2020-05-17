@@ -28,6 +28,6 @@ class Welcome extends CI_Controller
 
     public function shanu()
     {
-        echo "shanu is a great man";
+        echo "shanu is a damn great man";
     }
 }
