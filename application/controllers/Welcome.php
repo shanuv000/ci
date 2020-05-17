@@ -10,10 +10,6 @@ class Welcome extends CI_Controller
         $this->load->view('welcome_message');
 
     }
- public function hey(){
-        echo "Kaise ho?";
-
- }
     public function shanu()
     {
         echo "shanu is a damn great man";
