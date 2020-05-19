@@ -1,23 +1,30 @@
 <?php
 
-class users extends CI_Controller{
+class users extends CI_Controller
+{
 
 
+    public function login()
+    {
+        $this->form_validation->set_rules('username', 'username', 'trim|required|min_length[3]');
+        $this->form_validation->set_rules('password', 'password', 'trim|required|min_length[3]');
+        if ($this->form_validation->run() == FALSE) {
+            $data = array(
+                'errors' => validation_errors());
+        }
+        $this->session->set_flashdata($data);
+        redirect('home');
 
-    public function login(){
-$username= $this->input->post('username');
-$password =$this->input->post('password');
-$this->User_model->create_users(['user'=>$username,'password'=>$password]);
 
-
-
-
-
+//        $username = $this->input->post('username');
+//        $password = $this->input->post('password');
+//
+//        $this->User_model->create_users(['user' => $username, 'password' => $password]);
+//
 
 
         //        echo $_POST['username'];
 //        $this->load->model('user_model');
-
     }
 
 

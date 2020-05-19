@@ -1,6 +1,9 @@
 <h1>Login Here</h1>
 <?php
 $attributes = array('id'=>'login_form','class'=>'form-horizontal');
+if($this->session->flashdata('errors')):
+echo $this->session->flashdata('errors');
+endif;
 echo form_open('users/login',$attributes);?>
 <div class="form-group">
 <?php

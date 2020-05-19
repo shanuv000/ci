@@ -15,18 +15,18 @@
     </tr>
 
 
-<h1>
+    <h1>
 
-    <?php
-    foreach ($results as $object){
-        echo "<tr><td>".$object->user."</td>";
-      echo "<td>".$object->password."</td></tr>";
+        <?php
+        foreach ($results as $object) {
+            echo "<tr><td>" . $object->user . "</td>";
+            echo "<td>" . $object->password . "</td></tr>";
 
-    }
+        }
 
 
-    ?>
-</h1>
+        ?>
+    </h1>
 </table>
 </body>
 </html>
