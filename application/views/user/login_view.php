@@ -23,6 +23,16 @@ $data = array(
 
     <?php echo form_password($data);?>
 </div>
+
+<div class="form-group">
+<?php
+$data = array(
+        'class'=>'form-control','name'=>'confirm_password','placeholder'=>'Confirm Password'
+    )
+?>
+
+    <?php echo form_password($data);?>
+</div>
 <div class="form-group">
 <?php
 $data = array(
