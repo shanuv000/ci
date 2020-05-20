@@ -19,7 +19,7 @@ class User_model extends CI_Model
         $this->db->where('password', $password);
         $result = $this->db->get('user_data');
         if ($result->num_rows() == 1) {
-            return $result->rows(0)->id;
+            return $result->row(0)->id;   //select single row in db
         } else {
             return false;
         }

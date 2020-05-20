@@ -22,15 +22,22 @@ class users extends CI_Controller
 
             $user_id = $this->User_model->login_users($username, $password);
             if ($user_id) {
-                $user_data = array('user_id' => $user_id, 'username' => $username, 'logged_in' => true);
+//                $user_data = array('user_id' => $user_id, 'username' => $username, 'logged_in' => true);
+//                $this->session->set_userdata($user_data);
+//                $this->session->set_flashdata('logged_in','You are now logged in');
+//                redirect('home/index');
+                $user_data = array(
+
+                    'user_id' => $user_id,
+                    'username' => $username,
+                    'logged_in' => true
+                );
                 $this->session->set_userdata($user_data);
-                $this->session->set_flashdata('logged_in','You are now logged in');
+                $this->session->set_flashdata('login_success', $username.' You are Successfully  logged in');
                 redirect('home/index');
 
-
-
             } else {
-                $this->session->set_flashdata('login_failed','Sorry, You are not logged in');
+                $this->session->set_flashdata('login_failed', 'Sorry, '.$username .' You are not logged in');
                 redirect('home/index');
             }
         }
@@ -57,17 +64,6 @@ class users extends CI_Controller
 //            echo $object->user . "<br>";
 //        }
 //    }
-
-
-
-
-
-
-
-
-
-
-
 
 
 //{
