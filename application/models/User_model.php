@@ -32,6 +32,10 @@ class User_model extends CI_Model
 //        return $query->num_rows();
     }
 
+    public function register_users($data)
+    {
+        $this->db->insert('user_data', $data);
+    }
 
     public function create_users($data)
     {

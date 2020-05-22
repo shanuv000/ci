@@ -13,7 +13,6 @@ class users extends CI_Controller
         if ($this->form_validation->run() == FALSE) {
             $data = array(
                 'errors' => validation_errors());
-
             $this->session->set_flashdata($data);
             redirect('home');
         } else {
@@ -27,7 +26,6 @@ class users extends CI_Controller
 //                $this->session->set_flashdata('logged_in','You are now logged in');
 //                redirect('home/index');
                 $user_data = array(
-
                     'user_id' => $user_id,
                     'username' => $username,
                     'logged_in' => true
@@ -39,19 +37,53 @@ class users extends CI_Controller
 
 //                redirect('home/index');
             } else {
-                $this->session->set_flashdata('login_failed', $username . ' You fucker check your password.');
+                $this->session->set_flashdata('login_failed', $username . ' check your username and password.');
                 redirect('home/index');
             }
         }
-
-
-//
-
-//
-
-
         //        echo $_POST['username'];
 //        $this->load->model('user_model');
+    }
+
+    public function register()
+    {
+
+
+        $this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[3]');
+        $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[3]');
+        $this->form_validation->set_rules('confirm_password', 'Confirm Password', 'trim|required|min_length[3]|matches[password]');
+        $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
+        $this->form_validation->set_rules('first_name', 'First Name', 'trim|required|min_length[3]');
+        $this->form_validation->set_rules('last_name', 'Last name', 'trim|required|min_length[3]');
+
+        if ($this->form_validation->run() == FALSE) {
+                        $data['main_view'] = 'user/register_view';
+            $this->load->view('layouts/main', $data);
+
+
+
+
+        }else{
+
+        }
+        redirect('users/register');
+
+
+//        $username = $this->input->post('username');
+//        $password = $this->input->post('password');
+//        $email = $this->input->post('email');
+//        $firstname = $this->input->post('first_name');
+//        $lastname = $this->input->post('last_name');
+//        $this->User_model->register_users
+//        ([
+//            'user' => $username,
+//            'password' => $password,
+//            'email' => $email,
+//            'first_name' => $firstname,
+//            'last_name' => $lastname
+//
+//        ]);
+
     }
 
     public function logout()
