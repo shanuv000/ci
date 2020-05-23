@@ -12,7 +12,8 @@ class users extends CI_Controller
             array('matches' => 'shanuji password match nhi hua...loll...'));
         if ($this->form_validation->run() == FALSE) {
             $data = array(
-                'errors' => validation_errors());
+                'errors' => validation_errors()
+            );
             $this->session->set_flashdata($data);
             redirect('home');
         } else {
@@ -56,19 +57,12 @@ class users extends CI_Controller
         $this->form_validation->set_rules('first_name', 'First Name', 'trim|required|min_length[3]');
         $this->form_validation->set_rules('last_name', 'Last name', 'trim|required|min_length[3]');
 
-        if ($this->form_validation->run() == FALSE) {
-                        $data['main_view'] = 'user/register_view';
+        if($this->form_validation->run() == FALSE) {
+            $data['main_view'] = 'user/register_view';
             $this->load->view('layouts/main', $data);
-
-
-
-
         }else{
 
         }
-        redirect('users/register');
-
-
 //        $username = $this->input->post('username');
 //        $password = $this->input->post('password');
 //        $email = $this->input->post('email');
