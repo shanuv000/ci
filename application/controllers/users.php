@@ -57,26 +57,19 @@ class users extends CI_Controller
         $this->form_validation->set_rules('first_name', 'First Name', 'trim|required|min_length[3]');
         $this->form_validation->set_rules('last_name', 'Last name', 'trim|required|min_length[3]');
 
-        if($this->form_validation->run() == FALSE) {
+        if ($this->form_validation->run() == FALSE) {
             $data['main_view'] = 'user/register_view';
             $this->load->view('layouts/main', $data);
-        }else{
+        } else {
+            if ($this->User_model->create_users()) {
+                redirect('home/index');
+            } else {
+
+
+            }
 
         }
-//        $username = $this->input->post('username');
-//        $password = $this->input->post('password');
-//        $email = $this->input->post('email');
-//        $firstname = $this->input->post('first_name');
-//        $lastname = $this->input->post('last_name');
-//        $this->User_model->register_users
-//        ([
-//            'user' => $username,
-//            'password' => $password,
-//            'email' => $email,
-//            'first_name' => $firstname,
-//            'last_name' => $lastname
-//
-//        ]);
+
 
     }
 
