@@ -41,16 +41,16 @@ class User_model extends CI_Model
     {
         $data = array(
             'first_name' => $this->input->post('first_name'),
-        'last_name'=>$this->input->post('last_name'),
-        'user'=>$this->input->post('user'),
-        'password'=>$this->input->post('password'),
-        'email'=>$this->input->post('email')
+            'last_name' => $this->input->post('last_name'),
+            'user' => $this->input->post('user'),
+            'password' => $this->input->post('password'),
+            'email' => $this->input->post('email')
 
 
         );
 
-      $insert_data = $this->db->insert('user_data', $data);
-return $insert_data;
+        $insert_data = $this->db->insert('user_data', $data);
+        return $insert_data;
     }
 
 

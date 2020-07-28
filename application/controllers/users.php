@@ -3,13 +3,34 @@
 class users extends CI_Controller
 {
 
+    public function register()
+    {
+
+
+        $this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[3]');
+        $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[3]');
+        $this->form_validation->set_rules('confirm_password', 'Confirm Password', 'trim|required|min_length[3]|matches[password]');
+        $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
+        $this->form_validation->set_rules('first_name', 'First Name', 'trim|required|min_length[3]');
+        $this->form_validation->set_rules('last_name', 'Last name', 'trim|required|min_length[3]');
+
+        if ($this->form_validation->run() == FALSE) {
+            $data['main_view'] = 'user/register_view';
+            $this->load->view('layouts/main', $data);
+        } else {
+
+            redirect('https://google.com');
+
+        }
+
+    }
 
     public function login()
     {
         $this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[3]');
         $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[3]');
         $this->form_validation->set_rules('confirm_password', 'Confirm Password', 'trim|required|min_length[3]|matches[password]',
-            array('matches' => 'shanuji password match nhi hua...loll...'));
+            array('matches' => 'Password didnot matched'));
         if ($this->form_validation->run() == FALSE) {
             $data = array(
                 'errors' => validation_errors()
@@ -46,32 +67,6 @@ class users extends CI_Controller
 //        $this->load->model('user_model');
     }
 
-    public function register()
-    {
-
-
-        $this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[3]');
-        $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[3]');
-        $this->form_validation->set_rules('confirm_password', 'Confirm Password', 'trim|required|min_length[3]|matches[password]');
-        $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
-        $this->form_validation->set_rules('first_name', 'First Name', 'trim|required|min_length[3]');
-        $this->form_validation->set_rules('last_name', 'Last name', 'trim|required|min_length[3]');
-
-        if ($this->form_validation->run() == FALSE) {
-            $data['main_view'] = 'user/register_view';
-            $this->load->view('layouts/main', $data);
-        } else {
-            if ($this->User_model->create_users()) {
-                redirect('home/index');
-            } else {
-
-
-            }
-
-        }
-
-
-    }
 
     public function logout()
     {
