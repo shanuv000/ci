@@ -15,6 +15,7 @@ class users extends CI_Controller
         $this->form_validation->set_rules('last_name', 'Last name', 'trim|required|min_length[3]');
 
         if ($this->form_validation->run() == FALSE) {
+
             $data['main_view'] = 'user/register_view';
             $this->load->view('layouts/main', $data);
         } else {
