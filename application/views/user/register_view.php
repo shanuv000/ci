@@ -5,7 +5,7 @@
 
     <?php echo validation_errors('<p class="bg-danger"></p>'); ?>
 
-    <?php echo form_open('users/register',$attributes);?>
+    <?php echo form_open('index.php/users/register',$attributes);?>
     <div class="form-group"><?php echo form_label('First name');?>
         <?php $data = array('class'=>'form-control','name'=>'first_name','placeholder'=>'Enter First Name')
         ?>
@@ -72,4 +72,4 @@
     </div>
 
 
-    <?php form_close();?>
+    <?php echo form_close();?>

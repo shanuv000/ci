@@ -6,22 +6,21 @@ class users extends CI_Controller
     public function register()
     {
 
-
+        $this->form_validation->set_rules('first_name', 'First Name', 'trim|required|min_length[3]');
+        $this->form_validation->set_rules('last_name', 'First Name', 'trim|required|min_length[3]');
+        $this->form_validation->set_rules('email', 'Email', 'trim|required|min_length[3]');
         $this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[3]');
         $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[3]');
         $this->form_validation->set_rules('confirm_password', 'Confirm Password', 'trim|required|min_length[3]|matches[password]');
-        $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
-        $this->form_validation->set_rules('first_name', 'First Name', 'trim|required|min_length[3]');
-        $this->form_validation->set_rules('last_name', 'Last name', 'trim|required|min_length[3]');
 
-        if ($this->form_validation->run() == FALSE) {
 
-            $data['main_view'] = 'user/register_view';
-            $this->load->view('layouts/main', $data);
-        } else {
+                if ($this->form_validation->run() == FALSE) {
 
-            redirect('https://google.com');
 
+                    $data['main_view'] = 'user/register_view';
+                    $this->load->view('layouts/main', $data);
+                } else {
+                    redirect('https://google.com');
         }
 
     }
@@ -37,7 +36,7 @@ class users extends CI_Controller
                 'errors' => validation_errors()
             );
             $this->session->set_flashdata($data);
-            redirect('home');
+            redirect('home/index');
         } else {
             $username = $this->input->post('username');
             $password = $this->input->post('password');
