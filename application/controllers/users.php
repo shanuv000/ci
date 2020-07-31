@@ -14,16 +14,22 @@ class users extends CI_Controller
         $this->form_validation->set_rules('confirm_password', 'Confirm Password', 'trim|required|min_length[3]|matches[password]');
 
 
-                if ($this->form_validation->run() == FALSE) {
+        if ($this->form_validation->run() == FALSE) {
 
 
-                    $data['main_view'] = 'user/register_view';
-                    $this->load->view('layouts/main', $data);
-                } else {
-                    redirect('https://google.com');
+            $data['main_view'] = 'user/register_view';
+            $this->load->view('layouts/main', $data);
+        } else {
+            if ($this->User_model->create_user()) {
+                $this->session->set_flashdata('user_registered', 'Welcome You are now Registered');
+
+                redirect('home/index');
+            } else {
+            }
         }
 
     }
+
 
     public function login()
     {

@@ -3,7 +3,7 @@
     <?php
     $attributes = array('id'=>'register_form','class'=>'form-horizontal');?>
 
-    <?php echo validation_errors('<p class="bg-danger"></p>'); ?>
+    <?php echo validation_errors("<p class='bg-success'></p>"); ?>
 
     <?php echo form_open('index.php/users/register',$attributes);?>
     <div class="form-group"><?php echo form_label('First name');?>

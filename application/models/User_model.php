@@ -16,39 +16,40 @@ class User_model extends CI_Model
     public function login_users($username, $password)
     {
         $this->db->where('user', $username);
-        $this->db->where('password', $password);
         $result = $this->db->get('user_data');
-        if ($result->num_rows() == 1) {
+
+        $db_password = $result->row(2)->password;
+        if (password_verify($password, $db_password)) {
             return $result->row(0)->id;   //select single row in db
         } else {
             return false;
         }
-
-
+    }
         //        $this->db->where('id', $user_id);
 //        $query = $this->db->query("select * from user_data");
         //        return $query->num_fields(); this will give number of columns
         //        $query = $this->db->get('user_data');
 //        return $query->num_rows();
-    }
+
 
 //    public function register_users($data)
 //    {
 //        $this->db->insert('user_data', $data);
 //    }
 
-    public function create_users($data)
+
+    public function create_user()
+
     {
+        $option = ['$cost' => 12];
+        $encrypted_pass = password_hash($this->input->post('password'), PASSWORD_BCRYPT, $option);
         $data = array(
+            'user' => $this->input->post('username'),
+            'password' => $encrypted_pass,
             'first_name' => $this->input->post('first_name'),
             'last_name' => $this->input->post('last_name'),
-            'user' => $this->input->post('user'),
-            'password' => $this->input->post('password'),
             'email' => $this->input->post('email')
-
-
         );
-
         $insert_data = $this->db->insert('user_data', $data);
         return $insert_data;
     }
