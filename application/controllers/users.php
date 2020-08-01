@@ -20,6 +20,9 @@ class users extends CI_Controller
             $data['main_view'] = 'user/register_view';
             $this->load->view('layouts/main', $data);
         } else {
+
+
+
             if ($this->User_model->create_user()) {
                 $this->session->set_flashdata('user_registered', 'Welcome You are now Registered');
 
@@ -59,14 +62,16 @@ class users extends CI_Controller
                     'logged_in' => true
                 );
                 $this->session->set_userdata($user_data);
-                $this->session->set_flashdata('login_success', $username . ' You are Successfully  logged in');
+                $this->session->set_flashdata('login_success', ucfirst($username) . ' You are Successfully  logged in');
                 $data['main_view'] = 'admin_view';
                 $this->load->view('layouts/main', $data);
 
 //                redirect('home/index');
             } else {
                 $this->session->set_flashdata('login_failed', $username . ' check your username and password.');
-                redirect('home/index');
+
+
+                                redirect('home/index');
             }
         }
         //        echo $_POST['username'];

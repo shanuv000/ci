@@ -1,1 +1,13 @@
-<h1>This is admin View</h1>
+<div class="jumbotron"><h1>
+        <?php
+        if ($this->session->flashdata('login_success')):
+            echo $this->session->flashdata('login_success');
+        endif;
+
+?>
+
+    </h1>
+
+
+</div>
+
