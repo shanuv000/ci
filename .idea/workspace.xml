@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f59bd6d5-290c-41b9-abe5-d24c54632398" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/application/controllers/projects.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/models/project_model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/projects/display.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/projects/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/projects/create_project_view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/d5779607-c11c-48fc-a5a0-54604dd8d86e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d5779607-c11c-48fc-a5a0-54604dd8d86e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/projects.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/admin_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/home_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/home_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/project_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/project_model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/layouts/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/layouts/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/projects/display.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/projects/display.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/projects/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/projects/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/user/login_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/user/login_view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +89,8 @@
       <workItem from="1595973134165" duration="3721000" />
       <workItem from="1595978192933" duration="4183000" />
       <workItem from="1596100237115" duration="7955000" />
-      <workItem from="1596312039087" duration="5893000" />
+      <workItem from="1596312039087" duration="16602000" />
+      <workItem from="1596482819379" duration="158000" />
     </task>
     <servers />
   </component>
@@ -112,18 +113,18 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1589762713988" />
-    <state x="408" y="193" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1595972982833">
+    <state x="408" y="193" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596482834361">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="408" y="193" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1440.900@0.0.1440.900" timestamp="1595972982833" />
+    <state x="408" y="193" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1440.900@0.0.1440.900" timestamp="1596482834361" />
     <state x="402" y="167" key="NewPhpClassDialog" timestamp="1596314964360">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="402" y="167" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1596314964360" />
-    <state x="543" y="380" key="NewPhpFileDialog" timestamp="1596324818112">
+    <state x="543" y="380" key="NewPhpFileDialog" timestamp="1596408083143">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="543" y="380" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1596324818112" />
+    <state x="543" y="380" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1596408083143" />
     <state x="229" y="89" key="SettingsEditor" timestamp="1590033393078">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

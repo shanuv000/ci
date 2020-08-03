@@ -29,9 +29,13 @@
             <a class="nav-item nav-link active" href="<?php echo base_url(); ?>">HOME <span
                         class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="<?php echo base_url(); ?>users/register">REGISTER</a>
+            <a class="nav-item nav-link" href="<?php echo base_url(); ?>projects">Projects</a>
         </div>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a class="nav-item nav-link" href="#">logout</a></li>
+        <ul class="nav navbar-nav navbar-right glyphicon-object-align-right">
+            <?php if($this->session->userdata('logged_in')):?>
+
+            <li><a class="nav-item nav-link" href="<?= base_url()?>users/logout">logout</a></li>
+            <? endif;?>
         </ul>
     </div>
 </nav>

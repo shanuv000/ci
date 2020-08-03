@@ -7,7 +7,7 @@ class users extends CI_Controller
     {
 
         $this->form_validation->set_rules('first_name', 'First Name', 'trim|required|min_length[3]');
-        $this->form_validation->set_rules('last_name', 'First Name', 'trim|required|min_length[3]');
+        $this->form_validation->set_rules('last_name', 'Last Name', 'trim|required|min_length[3]');
         $this->form_validation->set_rules('email', 'Email', 'trim|required|min_length[3]');
         $this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[3]');
         $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[3]');
@@ -38,8 +38,8 @@ class users extends CI_Controller
     {
         $this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[3]');
         $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[3]');
-        $this->form_validation->set_rules('confirm_password', 'Confirm Password', 'trim|required|min_length[3]|matches[password]',
-            array('matches' => 'Password didnot matched'));
+//        $this->form_validation->set_rules('confirm_password', 'Confirm Password', 'trim|required|min_length[3]|matches[password]',
+//            array('matches' => 'Password didnot matched'));
         if ($this->form_validation->run() == FALSE) {
             $data = array(
                 'errors' => validation_errors()
@@ -63,10 +63,10 @@ class users extends CI_Controller
                 );
                 $this->session->set_userdata($user_data);
                 $this->session->set_flashdata('login_success', ucfirst($username) . ' You are Successfully  logged in');
-                $data['main_view'] = 'admin_view';
-                $this->load->view('layouts/main', $data);
+//                $data['main_view'] = 'admin_view';
+//                $this->load->view('layouts/main', $data);
 
-//                redirect('home/index');
+                redirect('projects');
             } else {
                 $this->session->set_flashdata('login_failed', $username . ' check your username and password.');
 
