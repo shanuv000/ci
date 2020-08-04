@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f59bd6d5-290c-41b9-abe5-d24c54632398" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/application/views/projects/create_project_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/projects/update_project_view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/d5779607-c11c-48fc-a5a0-54604dd8d86e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d5779607-c11c-48fc-a5a0-54604dd8d86e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/projects.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/users.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/models/project_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/project_model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/layouts/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/layouts/main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/projects/display.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/projects/display.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/projects/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/projects/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/user/login_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/user/login_view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +36,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/views/projects" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -50,13 +46,15 @@
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/application/views/projects" />
+      <recent name="$PROJECT_DIR$/application/controllers" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/application/views/layouts" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/application/controllers" />
-    </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="StructureViewFactory">
     <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
     <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR,VISIBILITY_SORTER,Show Includes,SHOW_INHERITED" />
@@ -91,11 +89,13 @@
       <workItem from="1596100237115" duration="7955000" />
       <workItem from="1596312039087" duration="16602000" />
       <workItem from="1596482819379" duration="158000" />
+      <workItem from="1596483057253" duration="5655000" />
+      <workItem from="1596497236437" duration="3163000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
