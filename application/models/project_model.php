@@ -23,23 +23,19 @@ class project_model extends CI_Model
         return $insert_data;
     }
 
-    public function update_project($id,$data)
+    public function update_project($id, $data)
     {
-        $this->db->where(['id',$id]);
+        $this->db->where(['id', $id]);
         $this->db->update('projects', $data);
-return true;
+        return true;
     }
 
-    public function get_project_info($id){
-        $this->db->where('id',$id);
+    public function get_project_info($project_id)
+    {
+        $this->db->where('id', $project_id);
         $query = $this->db->get('projects');
         return $query->row();
-
     }
-
-
-
-
 }
 
 
