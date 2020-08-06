@@ -42,6 +42,7 @@ class projects extends CI_Controller
         }
     }
 
+
     public function update_projects($project_id)
     {
         $this->form_validation->set_rules('project_name', 'Project Name', 'trim|required|min_length[3]');
@@ -65,6 +66,17 @@ class projects extends CI_Controller
             }
         }
     }
+
+
+
+    public function delete_projects($project_id){
+
+     $this->project_model->delete_project($project_id);
+     $this->session->set_flashdata('project_deleted','Your project is deleted');
+//     redirect('projects/index');
+    }
+
+
 
     public function display($project_id)
     {

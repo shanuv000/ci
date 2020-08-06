@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f59bd6d5-290c-41b9-abe5-d24c54632398" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/projects.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/models/project_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/project_model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/projects/display.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/projects/display.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/projects/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/projects/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/projects/update_project_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/projects/update_project_view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +91,7 @@
       <workItem from="1596482819379" duration="158000" />
       <workItem from="1596483057253" duration="5655000" />
       <workItem from="1596497236437" duration="5824000" />
-      <workItem from="1596742306469" duration="159000" />
+      <workItem from="1596742306469" duration="2974000" />
     </task>
     <servers />
   </component>
@@ -126,9 +130,13 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1590033393078" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1595976860521">
+    <state x="501" y="270" width="438" height="357" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1596745174968">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1595976860521" />
+    <state x="501" y="270" width="438" height="357" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1440.900@0.0.1440.900" timestamp="1596745174968" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1596746307748">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1596746307748" />
   </component>
 </project>

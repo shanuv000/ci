@@ -14,7 +14,7 @@
 
             <li class="list-group-item"><a href="">Create Project</a></li>
             <li class="list-group-item"><a href="<?= base_url();?>projects/update_projects/<?php echo $project_data->id;?>">Edit Project</a></li>
-            <li class="list-group-item"><a href="#">Delete</a></li>
+            <li class="list-group-item"><a href="<?= base_url();?>projects/delete_projects/">Delete</a></li>
         </ul>
     </div>
     </div>

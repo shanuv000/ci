@@ -17,6 +17,7 @@
         echo "<td> <a href='". base_url()   ."projects/display/". $project->id  ."'>". $project->project_name."</a></td>"
         ?>
         <?php echo "<td >". $project->project_body."</td>"; ?>
+                <?php echo "<td ><a href='". base_url()   ."projects/delete_projects/". $project->id  ."'>delete</a></td>"; ?>
     </tr>
 
     <?php endforeach;

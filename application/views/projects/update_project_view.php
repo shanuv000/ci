@@ -3,7 +3,7 @@
 
 <?php
 echo "<h1>".$project_info->project_name."</h1>";
-$attributes = array('id'=>'update_form','class'=>'form-horizontal');?>
+$attributes = array('id'=>'create_form','class'=>'form-horizontal');?>
 
 <?php echo validation_errors("<p class='bg-success'></p>"); ?>
 
