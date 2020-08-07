@@ -25,7 +25,7 @@ class project_model extends CI_Model
 
     public function update_project($project_id, $data)
     {
-        $this->db->where(['id', $project_id]);
+        $this->db->where(['id'=> $project_id]);
         $this->db->update('projects', $data);
         return true;
     }
@@ -38,7 +38,7 @@ class project_model extends CI_Model
     }
 
     public function delete_project($project_id){
-        $this->db->where(['id', $project_id]);
+        $this->db->where(['id'=> $project_id]);
         $this->db->delete('projects');
 
     }

@@ -7,7 +7,6 @@
       <change beforePath="$PROJECT_DIR$/application/models/project_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/project_model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/projects/display.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/projects/display.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/projects/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/projects/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/projects/update_project_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/projects/update_project_view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,10 +54,6 @@
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="StructureViewFactory">
-    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
-    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR,VISIBILITY_SORTER,Show Includes,SHOW_INHERITED" />
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -91,7 +86,8 @@
       <workItem from="1596482819379" duration="158000" />
       <workItem from="1596483057253" duration="5655000" />
       <workItem from="1596497236437" duration="5824000" />
-      <workItem from="1596742306469" duration="2974000" />
+      <workItem from="1596742306469" duration="3503000" />
+      <workItem from="1596754549759" duration="1917000" />
     </task>
     <servers />
   </component>

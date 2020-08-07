@@ -6,7 +6,8 @@
             </p>
             <p>
             <h5>  <?= $project_data->date_created ?></h5>
-            </p></div></div>
+            </p></div>
+</div>
      <div class="row float-right">
     <div class="col-xs-3 ">
         <ul class="list-group"><h4>Project Actions</h4>
@@ -14,7 +15,7 @@
 
             <li class="list-group-item"><a href="">Create Project</a></li>
             <li class="list-group-item"><a href="<?= base_url();?>projects/update_projects/<?php echo $project_data->id;?>">Edit Project</a></li>
-            <li class="list-group-item"><a href="<?= base_url();?>projects/delete_projects/">Delete</a></li>
+            <li class="list-group-item"><a href="<?= base_url();?>projects/delete_projects/<?php echo $project_data->id;?>">Delete</a></li>
         </ul>
     </div>
     </div>

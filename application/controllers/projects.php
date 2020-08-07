@@ -50,32 +50,30 @@ class projects extends CI_Controller
 
         if ($this->form_validation->run() == FALSE) {
 
-            $data['project_info']= $this->project_model->get_project_info($project_id);
+            $data['project_info'] = $this->project_model->get_project_info($project_id);
             $data['main_view'] = "projects/update_project_view";
             $this->load->view('layouts/main', $data);
-        }else
-            {
+        } else {
             $data = array(
                 'project_user_id' => $this->session->userdata('user_id'),
                 'project_name' => $this->input->post('project_name'),
                 'project_body' => $this->input->post('project_body')
             );
-            if($this->project_model->update_project($project_id,$data)){
-                $this->session->set_flashdata('project_updated','Project Updated successfully');
+            if ($this->project_model->update_project($project_id, $data)) {
+                $this->session->set_flashdata('project_updated', 'Project Updated successfully');
                 redirect('projects/index');
             }
         }
     }
 
 
+    public function delete_projects($project_id)
+    {
 
-    public function delete_projects($project_id){
-
-     $this->project_model->delete_project($project_id);
-     $this->session->set_flashdata('project_deleted','Your project is deleted');
-//     redirect('projects/index');
+        $this->project_model->delete_project($project_id);
+        $this->session->set_flashdata('project_deleted', 'Your project is deleted');
+        redirect('projects/index');
     }
-
 
 
     public function display($project_id)
