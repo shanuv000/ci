@@ -1,56 +1,74 @@
 
 
 
+
+
+<?php if(isset($projects)):?>
 <div class="jumbotron jumbotron-fluid">
-    <center><h1>Welcome to My page</h1></center>
-<p>
-
-   <b> What is Lorem Ipsum?</b><br>
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p><p>   <b> Why do we use it?</b><br>
-
-    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+    <center><h1>Projects</h1></center>
+</div>
 
 
-</p>
-
-
-
-
-
-
-
-
+    </p>
     <p class="bg-success">
         <?php if ($this->session->flashdata('login_success')):
-            echo  $this->session->flashdata('login_success');
-
+            echo $this->session->flashdata('login_success');
         endif;
         ?>
         <?php if ($this->session->flashdata('user_registered')):
-            echo  $this->session->flashdata('user_registered');
-
+            echo $this->session->flashdata('user_registered');
         endif;
         ?>
     </p>
     <p class="bg-danger">
         <?php if ($this->session->flashdata('login_failed')):
-            echo  $this->session->flashdata('login_failed');
+            echo $this->session->flashdata('login_failed');
         endif;
-
         if ($this->session->flashdata('no_access')):
-            echo  $this->session->flashdata('no_access');
-
+            echo $this->session->flashdata('no_access');
         endif;
-
         ?>
     </p>
 
 
 
+<a class="btn btn-warning float-right" href="<?php echo base_url();?>projects">View</a>
+<table class="table table-hover table-bordered" >
+    <a class="btn btn-primary float-right" href="<?= base_url();?>projects/create_projects">Create Project</a>
+    <thead>
+    <tr bgcolor="#f0ffff">
+
+        <th>PROJECT NAME</th>
+        <th>PROJECT BODY</th>
+        <th><i class="fa fa-trash" aria-hidden="true"></i>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <?php
+    foreach ($projects as $project):
+        ?>
+        <tr>
+
+
+            <?php echo "<td >". $project->project_name."</td>"; ?>
+            <?php echo "<td >". $project->project_body."</td>"; ?>
+
+            ?>
+        </tr>
+
+    <?php endforeach;
+    ?>
+
+    </tbody>
+
+</table>
+
+<?php else:?>
+
+<div class="jumbotron">
+  <center><h1>Welcome to the CI App</h1></center>
 
 </div>
-
-
-
-
+<?php endif;?>

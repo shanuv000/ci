@@ -17,6 +17,14 @@ class project_model extends CI_Model
         return $query->row();
     }
 
+    public function get_all_projects($user_id)
+    {
+        $this->db->where('project_user_id',$user_id);
+        $query = $this->db->get('projects');
+        return $query->result();
+
+    }
+
     public function create_project($data)
     {
         $insert_data = $this->db->insert('projects', $data);

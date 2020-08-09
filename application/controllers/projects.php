@@ -34,7 +34,7 @@ class projects extends CI_Controller
                 'project_body' => $this->input->post('project_body')
             );
             if ($this->project_model->create_project($data)) {
-                $this->session->flashdata('project_created', 'Hello, Project created');
+                $this->session->set_flashdata('project_created', 'Your Project has been Created');
                 redirect('projects');
             }
 
@@ -60,7 +60,7 @@ class projects extends CI_Controller
                 'project_body' => $this->input->post('project_body')
             );
             if ($this->project_model->update_project($project_id, $data)) {
-                $this->session->set_flashdata('project_updated', 'Project Updated successfully');
+                $this->session->set_flashdata('project_updated', 'Your Project has been Updated');
                 redirect('projects/index');
             }
         }
@@ -71,7 +71,7 @@ class projects extends CI_Controller
     {
 
         $this->project_model->delete_project($project_id);
-        $this->session->set_flashdata('project_deleted', 'Your project is deleted');
+        $this->session->set_flashdata('project_deleted', 'Your project has been deleted');
         redirect('projects/index');
     }
 
