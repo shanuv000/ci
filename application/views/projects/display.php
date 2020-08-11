@@ -13,7 +13,7 @@
         <ul class="list-group"><h4>Project Actions</h4>
             <a class="btn btn-primary float-right" href="<?= base_url();?>projects/create_projects">Create Project</a>
 
-            <li class="list-group-item"><a href="">Create Project</a></li>
+            <li class="list-group-item"><a href="<?= base_url();?>/tasks/create/<?= $project_data->id;?>">Create Task</a></li>
             <li class="list-group-item"><a href="<?= base_url();?>projects/update_projects/<?php echo $project_data->id;?>">Edit Project</a></li>
             <li class="list-group-item"><a href="<?= base_url();?>projects/delete_projects/<?php echo $project_data->id;?>">Delete</a></li>
         </ul>

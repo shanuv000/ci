@@ -32,6 +32,7 @@ class projects extends CI_Controller
                 'project_user_id' => $this->session->userdata('user_id'),
                 'project_name' => $this->input->post('project_name'),
                 'project_body' => $this->input->post('project_body')
+
             );
             if ($this->project_model->create_project($data)) {
                 $this->session->set_flashdata('project_created', 'Your Project has been Created');

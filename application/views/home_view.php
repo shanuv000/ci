@@ -32,9 +32,9 @@
 
 
 
-<a class="btn btn-warning float-right" href="<?php echo base_url();?>projects">View</a>
+
 <table class="table table-hover table-bordered" >
-    <a class="btn btn-primary float-right" href="<?= base_url();?>projects/create_projects">Create Project</a>
+    <a class="btn btn-primary float-right btn-toolbar" href="<?= base_url();?>projects/create_projects">Create Project</a>
     <thead>
     <tr bgcolor="#f0ffff">
 
@@ -54,8 +54,7 @@
 
             <?php echo "<td >". $project->project_name."</td>"; ?>
             <?php echo "<td >". $project->project_body."</td>"; ?>
-
-            ?>
+          <td>  <span><a class="btn btn-toolbar btn-warning " href="<?php echo base_url();?>projects">View</a></span></td>
         </tr>
 
     <?php endforeach;
