@@ -41,9 +41,9 @@ class Tasks extends CI_Controller
 
         if ($this->form_validation->run() == FALSE) {
 
-            $data['project_id'] = $this->task_model->get_task_project_id('$task_id');
-            $data['project_name'] = $this->task_model->get_project_name('project_id');
-            $data['project_id'] = $this->task_model->get_task_projct_data($task_id);
+            $data['project_id'] = $this->task_model->get_task_project_id($task_id);
+            $data['project_name'] = $this->task_model->get_project_name($data['project_id']);
+            $data['the_task'] = $this->task_model->get_task_project_data($task_id);
 
 //            $data['task_info'] = $this->task_model->get_task_info($task_id);
             $data['main_view'] = "tasks/edit_task_view";
