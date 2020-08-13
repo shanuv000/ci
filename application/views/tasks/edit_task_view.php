@@ -6,7 +6,7 @@ $attributes = array('id'=>'create_form','class'=>'form-horizontal');?>
 
 <?php echo validation_errors("<p class='bg-success'></p>"); ?>
 
-<?php echo form_open('tasks/update_tasks/'.$the_task->id.'',$attributes);?>
+<?php echo form_open('tasks/update_tasks/'.$this->uri->segment(3).'',$attributes);?>
 
 
 <div class="form-group"><?php echo form_label('Task title');?>

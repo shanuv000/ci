@@ -1,6 +1,7 @@
 <h1>Projects</h1>
 <div class="bg-success">
     <?php
+
      if ($this->session->flashdata('project_created')):
             echo  $this->session->flashdata('project_created');
         endif;
@@ -8,6 +9,12 @@
             echo  $this->session->flashdata('project_updated');
         endif;
 
+        if ($this->session->flashdata('task_updated')):
+            echo  $this->session->flashdata('task_updated');
+        endif;
+        if ($this->session->flashdata('task_created')):
+            echo  $this->session->flashdata('task_created');
+        endif;
         ?>
 </div>
 
@@ -15,6 +22,11 @@
     <?php
      if ($this->session->flashdata('project_deleted')):
             echo  $this->session->flashdata('project_deleted');
+        endif;
+
+
+        if ($this->session->flashdata('task_deleted')):
+            echo  $this->session->flashdata('task_deleted');
         endif;
         ?>
 </div>

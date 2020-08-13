@@ -21,7 +21,7 @@ class Task_model extends CI_Model
     {
         $this->db->where('id' , $task_id);
         $query = $this->db->get('tasks');
-        return $query->row()->id;
+        return $query->row()->project_id;
     }
 
     public function get_project_name($project_id)
@@ -39,16 +39,21 @@ class Task_model extends CI_Model
     }
 
 
-
-
-
-
-
-//    public function update_task($task_id,$data){
-//        $this->db->where(['id'=> $task_id]);
-//        $this->db->update('tasks', $data);
-//        return true;
-//    }
+    public function update_task($task_id,$data){
+        $this->db->where('id', $task_id);
+        $this->db->update('tasks', $data);
+        return true;
+    }
+    public function delete_task($task_id){
+        $this->db->where('id',$task_id);
+        $this->db->delete('tasks');
+        return true;
+    }
+    public function task_names($task_id){
+        $this->db->where('id',$task_id);
+        $query = $this->db->get('tasks');
+        return $query->row()->task_name;
+    }
 //
 //    public function get_task_info($task_id){
 //

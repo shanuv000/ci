@@ -19,7 +19,7 @@ class project_model extends CI_Model
 
     public function get_all_projects($user_id)
     {
-        $this->db->where('project_user_id',$user_id);
+        $this->db->where('project_user_id', $user_id);
         $query = $this->db->get('projects');
         return $query->result();
 
@@ -33,7 +33,7 @@ class project_model extends CI_Model
 
     public function update_project($project_id, $data)
     {
-        $this->db->where(['id'=> $project_id]);
+        $this->db->where(['id' => $project_id]);
         $this->db->update('projects', $data);
         return true;
     }
@@ -45,11 +45,46 @@ class project_model extends CI_Model
         return $get_data->row();
     }
 
-    public function delete_project($project_id){
-        $this->db->where(['id'=> $project_id]);
+    public function delete_project($project_id)
+    {
+        $this->db->where(['id' => $project_id]);
         $this->db->delete('projects');
 
     }
+    public function delete_project_and_tasks($project_id){
+        $this->db->where('project_id',$project_id);
+        $this->db->delete('tasks');
+    }
+
+    public function get_project_task($project_id, $active = true)
+    {
+        $this->db->select('
+tasks.task_name,
+tasks.task_body,
+tasks.id as task_id,
+projects.project_name,
+projects.project_body
+
+');
+        $this->db->from('tasks');
+        $this->db->join('projects', 'projects.id = tasks.project_id');
+        $this->db->where('tasks.project_id', $project_id);
+
+        if ($active == true) {
+            $this->db->where('tasks.status', 0);
+        } else {
+            $this->db->where('tasks.status', 1);
+        }
+
+        $query = $this->db->get();
+
+        if ($query->num_rows() < 1) {
+            return false;
+        }
+        return $query->result();
+    }
+
+
 }
 
 

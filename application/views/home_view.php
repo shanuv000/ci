@@ -54,7 +54,7 @@
 
             <?php echo "<td >". $project->project_name."</td>"; ?>
             <?php echo "<td >". $project->project_body."</td>"; ?>
-          <td>  <span><a class="btn btn-toolbar btn-warning " href="<?php echo base_url();?>projects">View</a></span></td>
+          <td>  <span><a class="btn btn-toolbar btn-warning " href="<?php echo base_url();?>projects/display/<?= $project->id?>">View</a></span></td>
         </tr>
 
     <?php endforeach;
