@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f59bd6d5-290c-41b9-abe5-d24c54632398" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/projects.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/project_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/project_model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/layouts/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/layouts/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/tasks.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/tasks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/task_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/task_model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/projects/display.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/projects/display.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/tasks/display.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/tasks/display.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,8 +113,16 @@
       <workItem from="1597100054907" duration="1544000" />
       <workItem from="1597228995195" duration="14684000" />
       <workItem from="1597299326109" duration="454000" />
-      <workItem from="1597317515253" duration="2800000" />
+      <workItem from="1597317515253" duration="7168000" />
     </task>
+    <task id="LOCAL-00001" summary="php storm commit">
+      <created>1597326936004</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597326936004</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +130,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="php storm commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="php storm commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="608" y="293" key="#Notifications" timestamp="1597326809547">
@@ -140,6 +150,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="408" y="193" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1440.900@0.0.1440.900" timestamp="1596482834361" />
+    <state x="327" y="23" width="785" height="829" key="CommitChangelistDialog2" timestamp="1597326935682">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="327" y="23" width="785" height="829" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1597326935682" />
     <state x="402" y="167" key="NewPhpClassDialog" timestamp="1596314964360">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -152,6 +166,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1590033393078" />
+    <state x="320" y="186" key="Vcs.Push.Dialog.v2" timestamp="1597326945928">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="186" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1597326945928" />
     <state x="501" y="270" width="438" height="353" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1596984469204">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

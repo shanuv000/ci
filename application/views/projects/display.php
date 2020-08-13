@@ -12,7 +12,7 @@
             <ul class="list-group">
                 <? foreach ($completed_tasks as $task): ?>
                     <a href="<?= base_url(); ?>/tasks/display/<?= $task->task_id ?>">
-                        <li class="list-group-item">        <?php echo $task->task_name; ?></li>
+                        <li style="color:palevioletred" class="list-group-item ">        <?php echo $task->task_name; ?></li>
                     </a>
                 <?php endforeach;
                 ?></ul>
@@ -24,7 +24,7 @@
             <ul class="list-group">
                 <? foreach ($not_completed_tasks as $task): ?>
                     <a href="<?= base_url(); ?>/tasks/display/<?= $task->task_id ?>">
-                        <li class="list-group-item">        <?php echo $task->task_name; ?></li>
+                        <li style="color:green" class="list-group-item">        <?php echo $task->task_name; ?></li>
                     </a>
                 <?php endforeach;
                 ?></ul>

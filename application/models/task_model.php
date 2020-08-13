@@ -19,7 +19,7 @@ class Task_model extends CI_Model
 
     public function get_task_project_id($task_id)
     {
-        $this->db->where('id' , $task_id);
+        $this->db->where('id', $task_id);
         $query = $this->db->get('tasks');
         return $query->row()->project_id;
     }
@@ -39,18 +39,23 @@ class Task_model extends CI_Model
     }
 
 
-    public function update_task($task_id,$data){
+    public function update_task($task_id, $data)
+    {
         $this->db->where('id', $task_id);
         $this->db->update('tasks', $data);
         return true;
     }
-    public function delete_task($task_id){
-        $this->db->where('id',$task_id);
+
+    public function delete_task($task_id)
+    {
+        $this->db->where('id', $task_id);
         $this->db->delete('tasks');
         return true;
     }
-    public function task_names($task_id){
-        $this->db->where('id',$task_id);
+
+    public function task_names($task_id)
+    {
+        $this->db->where('id', $task_id);
         $query = $this->db->get('tasks');
         return $query->row()->task_name;
     }
@@ -63,8 +68,24 @@ class Task_model extends CI_Model
 //
 //    }
 //
+    public function mark_task_complete($task_id) {
+
+        $this->db->set('status', 1);
+        $this->db->where('id', $task_id);
+        $this->db->update('tasks');
+
+        return true;
 
 
+    }
+
+
+    public function mark_task_incomplete($task_id) {
+        $this->db->set('status', 0);
+        $this->db->where('id', $task_id);
+        $this->db->update('tasks');
+        return true;
+    }
 }
 
 
