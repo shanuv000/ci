@@ -7,23 +7,31 @@
         <p>
         <h5>  <?= $project_data->date_created ?></h5>
         </p>
-
-
-        <h3>Tasks</h3>
+        <h3>Active Tasks</h3>
         <?php if ($completed_tasks): ?>
             <ul class="list-group">
-            <? foreach ($completed_tasks as $task): ?>
-                <a href="<?= base_url(); ?>/tasks/display/<?= $task->task_id ?>">
-
+                <? foreach ($completed_tasks as $task): ?>
+                    <a href="<?= base_url(); ?>/tasks/display/<?= $task->task_id ?>">
                         <li class="list-group-item">        <?php echo $task->task_name; ?></li>
+                    </a>
+                <?php endforeach;
+                ?></ul>
+<? endif;?>
 
-                </a>
+        <h3>Completed Tasks</h3>
 
+        <?php if ($not_completed_tasks): ?>
+            <ul class="list-group">
+                <? foreach ($not_completed_tasks as $task): ?>
+                    <a href="<?= base_url(); ?>/tasks/display/<?= $task->task_id ?>">
+                        <li class="list-group-item">        <?php echo $task->task_name; ?></li>
+                    </a>
+                <?php endforeach;
+                ?></ul>
 
-            <?php endforeach;
-?></ul> <?
-            else:
-                echo "<p><h3>You have no other Tasks </h3></p>";
+       <?
+        else:
+            echo "<p><h3>You have no other Tasks </h3></p>";
 
         endif;
         ?>

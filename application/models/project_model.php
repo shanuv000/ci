@@ -64,7 +64,6 @@ tasks.task_body,
 tasks.id as task_id,
 projects.project_name,
 projects.project_body
-
 ');
         $this->db->from('tasks');
         $this->db->join('projects', 'projects.id = tasks.project_id');

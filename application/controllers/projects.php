@@ -81,6 +81,7 @@ class projects extends CI_Controller
     {
 
         $data['completed_tasks'] = $this->project_model->get_project_task($project_id,true);
+        $data['not_completed_tasks'] = $this->project_model->get_project_task($project_id,false);
         $data['project_data'] = $this->project_model->get_project($project_id);
         $data['main_view'] = "projects/display";
         $this->load->view('layouts/main', $data);
