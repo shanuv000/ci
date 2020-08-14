@@ -11,7 +11,7 @@
 
 </div>
 
-<div class="col-xs-3 float-md-right">
+<div class="col-xs-3 float-right">
     <ul class="list-group"><h4>Task Actions</h4>
         <li class="list-group-item"><a href="<?= base_url(); ?>tasks/update_tasks/<?= $task->id ?>">Edit</a></li>
         <li class="list-group-item"><a href="<?= base_url(); ?>tasks/delete/<?= $task->project_id ?>/<?= $task->id; ?>">Delete</a>
