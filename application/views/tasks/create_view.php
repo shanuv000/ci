@@ -34,3 +34,7 @@ $attributes = array('id'=>'create_form','class'=>'form-horizontal');?>
 
 
 <?php echo form_close();?>
+<script>
+    webshims.setOptions('forms-ext',{types: 'date'});
+    webshims.polyfill('forms form-ext');
+</script>

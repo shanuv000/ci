@@ -1,73 +1,85 @@
 
 
 
-
-
-<?php if(isset($projects)):?>
-<div class="jumbotron jumbotron-fluid">
-    <center><h1>Projects</h1></center>
-</div>
-
-
-    </p>
-    <p class="bg-success">
-        <?php if ($this->session->flashdata('login_success')):
-            echo $this->session->flashdata('login_success');
-        endif;
-        ?>
-        <?php if ($this->session->flashdata('user_registered')):
-            echo $this->session->flashdata('user_registered');
-        endif;
-        ?>
-    </p>
-    <p class="bg-danger">
-        <?php if ($this->session->flashdata('login_failed')):
-            echo $this->session->flashdata('login_failed');
-        endif;
-        if ($this->session->flashdata('no_access')):
-            echo $this->session->flashdata('no_access');
-        endif;
-        ?>
-    </p>
-
-
-
-
-<table class="table table-hover table-bordered" >
-    <a class="btn btn-primary float-right btn-toolbar" href="<?= base_url();?>projects/create_projects">Create Project</a>
-    <thead>
-    <tr bgcolor="#f0ffff">
-
-        <th>PROJECT NAME</th>
-        <th>PROJECT BODY</th>
-        <th><i class="fa fa-trash" aria-hidden="true"></i>
-        </th>
-    </tr>
-    </thead>
-    <tbody>
-
-    <?php
-    foreach ($projects as $project):
-        ?>
-        <tr>
-
-
-            <?php echo "<td >". $project->project_name."</td>"; ?>
-            <?php echo "<td >". $project->project_body."</td>"; ?>
-          <td>  <span><a class="btn btn-toolbar btn-warning " href="<?php echo base_url();?>projects/display/<?= $project->id?>">View</a></span></td>
-        </tr>
-
-    <?php endforeach;
+</p>
+<p class="bg-success">
+    <?php if ($this->session->flashdata('login_success')):
+        echo $this->session->flashdata('login_success');
+    endif;
     ?>
+    <?php if ($this->session->flashdata('user_registered')):
+        echo $this->session->flashdata('user_registered');
+    endif;
+    ?>
+</p>
+<p class="bg-danger">
+    <?php if ($this->session->flashdata('login_failed')):
+        echo $this->session->flashdata('login_failed');
+    endif;
+    if ($this->session->flashdata('no_access')):
+        echo $this->session->flashdata('no_access');
+    endif;
+    ?>
+</p>
 
-    </tbody>
 
-</table>
+<?php if (isset($projects)): ?>
 
-<?php else:?>
+    <div class="jumbotron jumbotron-fluid">
+        <center><h1>Projects</h1></center>
+    </div>
+<div class="panel panel-success">
+    <div class="panel-heading">Projects</div>
+    <div class="panel-body">    <?php
+        foreach ($projects as $project):
+            ?>
 
-<div class="jumbotron">
-  <center><h1>Welcome to the CI App</h1></center>
 
+            <ul class="list-group">
+                <li class="list-group-item">
+
+                    <a class=" "
+                       href="<?php echo base_url(); ?>projects/display/<?= $project->id ?>"><?php echo ucfirst($project->project_name); ?></a>
+
+
+                </li>
+            </ul>
+        <?php endforeach;
+        ?>
+
+
+
+        <?php else: ?>
+
+            <div class="jumbotron">
+                <center><h1>Welcome to the CI App</h1></center>
+
+            </div>
+        <?php endif; ?>
+
+    </div>
 </div>
-<?php endif;?>
+
+
+<?php if (isset($tasks)): ?>
+
+<div class="panel panel-success">
+    <div class="panel-heading"><h4>Tasks</h4></div>
+    <div class="panel-body">
+        <ul class="list-group">
+            <?php
+            foreach ($tasks as $task):
+                ?>
+
+                <li class="list-group-item">
+                    <a href="<?php echo base_url(); ?>tasks/display/<?= $task->id ?>"><?php echo $task->task_name; ?></a>
+                </li>
+            <?php endforeach;
+            ?></ul>
+        <?php else: ?>
+
+
+        <?php endif; ?>
+    </div>
+</div>
+

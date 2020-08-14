@@ -2,11 +2,335 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f59bd6d5-290c-41b9-abe5-d24c54632398" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/css/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/polyfiller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/FlashCanvas/canvas2png.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/FlashCanvas/flashcanvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/FlashCanvas/flashcanvas.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/FlashCanvas/proxy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/FlashCanvas/save.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/FlashCanvasPro/canvas2png.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/FlashCanvasPro/flash10canvas.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/FlashCanvasPro/flash9canvas.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/FlashCanvasPro/flashcanvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/FlashCanvasPro/proxy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/FlashCanvasPro/save.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/canvas-blob.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/color-picker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/10.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/11.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/12.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/13.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/14.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/15.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/16.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/17.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/18.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/21.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/22.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/23.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/25.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/27.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/28.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/29.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/30.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/31.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/33.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/34.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/8.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/9.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/97.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/98.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/99.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/combos/comboinfo.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/details.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/dom-extend.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/es5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/es6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/excanvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/filereader-xhr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/form-combat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/form-core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/form-datalist-lazy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/form-datalist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/form-fixrangechange.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/form-inputmode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/form-message.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/form-native-extend.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/form-number-date-api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/form-number-date-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/form-shim-extend.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/form-shim-extend2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/form-validation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/form-validators.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/forms-picker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/geolocation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-ch-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-pt-BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-pt-PT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/i18n/formcfg-zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/jme/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/jme/alternate-media.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/jme/base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/jme/controls.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/jme/controls.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/jme/jme.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/jme/jme.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/jme/jme.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/jme/jme.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/jme/mediacontrols-lazy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/jme/mediacontrols.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/jme/playlist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/jpicker/ChangeLog.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/jpicker/ReadMe.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/jpicker/images/AlphaBar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/jpicker/images/Bars.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/jpicker/images/Maps.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/jpicker/images/NoColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/jpicker/images/bar-opacity.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/jpicker/images/map-opacity.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/jpicker/images/mappoint.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/jpicker/images/picker.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/jpicker/images/preview-opacity.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/jpicker/images/rangearrows.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/jpicker/jpicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/matchMedia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/mediacapture-picker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/mediacapture.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/mediaelement-core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/mediaelement-debug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/mediaelement-jaris.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/mediaelement-native-fix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/mediaelement-yt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/moxie/flash/Moxie.cdn.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/moxie/flash/Moxie.min.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/moxie/js/moxie-html4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/moxie/js/moxie-swf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/picture.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/plugins/jquery.ui.position.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/range-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/sizzle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/sticky.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/styles/color-picker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/styles/forms-ext.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/styles/forms-picker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/styles/progress.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/styles/progress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/styles/scss/_api-forms-ext.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/styles/scss/_api-shim.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/styles/scss/_extends.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/styles/scss/forms-ext.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/styles/scss/forms-picker.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/styles/scss/shim-ext.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/styles/scss/shim.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/styles/shim-ext.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/styles/shim.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/styles/transparent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/styles/widget-font.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/styles/widget.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/styles/widget.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/styles/widget.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/styles/widget.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/swf/JarisFLVPlayer.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/swfmini-embed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/swfmini.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/track-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/track.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/url.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/usermedia-core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/dev/shims/usermedia-shim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/polyfiller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/FlashCanvas/canvas2png.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/FlashCanvas/flashcanvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/FlashCanvas/flashcanvas.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/FlashCanvasPro/canvas2png.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/FlashCanvasPro/flash10canvas.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/FlashCanvasPro/flash9canvas.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/FlashCanvasPro/flashcanvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/canvas-blob.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/color-picker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/10.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/11.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/12.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/13.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/14.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/15.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/16.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/17.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/18.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/21.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/22.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/23.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/25.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/27.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/28.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/29.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/30.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/31.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/33.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/34.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/8.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/9.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/97.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/98.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/combos/99.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/details.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/dom-extend.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/es5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/es6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/excanvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/filereader-xhr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/form-combat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/form-core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/form-datalist-lazy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/form-datalist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/form-fixrangechange.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/form-inputmode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/form-message.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/form-native-extend.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/form-number-date-api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/form-number-date-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/form-shim-extend.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/form-shim-extend2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/form-validation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/form-validators.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/forms-picker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/geolocation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-ch-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-pt-BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-pt-PT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/i18n/formcfg-zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/jme/alternate-media.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/jme/base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/jme/controls.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/jme/jme.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/jme/jme.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/jme/jme.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/jme/jme.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/jme/mediacontrols-lazy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/jme/mediacontrols.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/jme/playlist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/jpicker/images/AlphaBar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/jpicker/images/Bars.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/jpicker/images/Maps.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/jpicker/images/NoColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/jpicker/images/bar-opacity.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/jpicker/images/map-opacity.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/jpicker/images/mappoint.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/jpicker/images/picker.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/jpicker/images/preview-opacity.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/jpicker/images/rangearrows.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/jpicker/jpicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/matchMedia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/mediacapture-picker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/mediacapture.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/mediaelement-core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/mediaelement-debug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/mediaelement-jaris.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/mediaelement-native-fix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/mediaelement-yt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/moxie/flash/Moxie.cdn.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/moxie/flash/Moxie.min.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/moxie/js/moxie-html4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/moxie/js/moxie-swf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/picture.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/plugins/jquery.ui.position.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/range-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/sizzle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/sticky.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/styles/color-picker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/styles/forms-ext.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/styles/forms-picker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/styles/progress.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/styles/progress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/styles/shim-ext.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/styles/shim.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/styles/transparent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/styles/widget.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/styles/widget.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/styles/widget.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/styles/widget.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/swf/JarisFLVPlayer.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/swfmini-embed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/swfmini.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/track-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/track.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/url.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/usermedia-core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js-webshim/minified/shims/usermedia-shim.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/tasks.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/tasks.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/models/task_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/task_model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/home_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/home_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/layouts/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/layouts/main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/projects/display.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/projects/display.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/tasks/create_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/tasks/create_view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/tasks/display.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/tasks/display.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/user/register_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/user/register_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/bootstrap.min.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +437,8 @@
       <workItem from="1597100054907" duration="1544000" />
       <workItem from="1597228995195" duration="14684000" />
       <workItem from="1597299326109" duration="454000" />
-      <workItem from="1597317515253" duration="7168000" />
+      <workItem from="1597317515253" duration="10304000" />
+      <workItem from="1597376558452" duration="7291000" />
     </task>
     <task id="LOCAL-00001" summary="php storm commit">
       <created>1597326936004</created>
@@ -146,6 +471,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1589762713988" />
+    <state x="474" y="250" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597338978825">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="474" y="250" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1597338978825" />
     <state x="408" y="193" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596482834361">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -158,10 +487,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="402" y="167" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1596314964360" />
-    <state x="543" y="380" key="NewPhpFileDialog" timestamp="1597051231811">
+    <state x="543" y="380" key="NewPhpFileDialog" timestamp="1597379626029">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="543" y="380" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1597051231811" />
+    <state x="543" y="380" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1597379626029" />
     <state x="229" y="89" key="SettingsEditor" timestamp="1590033393078">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

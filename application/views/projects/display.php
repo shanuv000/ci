@@ -1,4 +1,15 @@
-<div class="row">
+<div class="bg-success">
+<?php
+
+if ($this->session->flashdata('mark_done')):
+    echo $this->session->flashdata('mark_done');
+endif;
+if ($this->session->flashdata('mark_undone')):
+    echo $this->session->flashdata('mark_undone');
+endif;
+?>
+</div>
+
     <div class="jumbotron col-xs-9">
         <h1><?php echo $project_data->project_name; ?></h1>
         <p>
@@ -36,11 +47,9 @@
         endif;
         ?>
     </div>
-</div>
 
 
-<div class="row float-right">
-    <div class="col-xs-3 ">
+    <div class="col-xs-3 float-right ">
         <ul class="list-group"><h4>Project Actions</h4>
             <a class="btn btn-primary float-right" href="<?= base_url(); ?>projects/create_projects">Create Project</a>
 
@@ -50,8 +59,7 @@
                         href="<?= base_url(); ?>projects/update_projects/<?php echo $project_data->id; ?>">Edit
                     Project</a></li>
             <li class="list-group-item"><a
-                        href="<?= base_url(); ?>projects/delete_projects/<?php echo $project_data->id; ?>">Delete</a>
+                        href="<?= base_url(); ?>projects/delete_projects/<?php echo $project_data->id; ?>">Delete Projects</a>
             </li>
         </ul>
     </div>
-</div>

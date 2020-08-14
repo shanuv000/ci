@@ -5,10 +5,13 @@ class Tasks extends CI_Controller
 
     public function display($task_id)
     {
+        $data['project_id'] = $this->task_model->get_task_project_id($task_id);
+        $data['project_name'] = $this->task_model->get_project_name($data['project_id']);
 
         $data['task'] = $this->task_model->get_task($task_id);
         $data['main_view'] = "tasks/display";
         $this->load->view('layouts/main', $data);
+
     }
 
     public function create($project_id)
@@ -88,9 +91,10 @@ class Tasks extends CI_Controller
     {
         if ($this->task_model->mark_task_incomplete($task_id)) {
             $project_id = $this->task_model->get_task_project_id($task_id);
-            $this->session->set_flashdata('mark_undone', 'This is task has been Marked Undone');
+            $this->session->set_flashdata('mark_undone', 'This is task has been Pending');
             redirect('projects/display/' . $project_id . '');
         }
+
 
 
 

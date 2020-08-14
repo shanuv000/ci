@@ -1,40 +1,24 @@
-<h1>Task Display View</h1>
+<div class="col-xs-9">
 
+    <h1><?= ucfirst($task->task_name); ?></h1>
+    <p> Project Name: <?= ucfirst($project_name); ?></p>
+    <p>Created: <?= $task->date_created; ?></p>
+    <p>Due On: <?= $task->due_date; ?></p>
+    <h4>
+        Description
+    </h4>
+    <p class="task-description"><?= ucfirst($task->task_body); ?></p>
 
-<table class="table table-hover table-bordered">
-    <thead>
-    <tr bgcolor="#f0ffff">
+</div>
 
-        <th>TASK NAME</th>
-        <th>TASK BODY</th>
-        <th>Date Created</th>
-    </tr>
-    </thead>
-    <tbody>
+<div class="col-xs-3 float-md-right">
+    <ul class="list-group"><h4>Task Actions</h4>
+        <li class="list-group-item"><a href="<?= base_url(); ?>tasks/update_tasks/<?= $task->id ?>">Edit</a></li>
+        <li class="list-group-item"><a href="<?= base_url(); ?>tasks/delete/<?= $task->project_id ?>/<?= $task->id; ?>">Delete</a>
+        <li class="list-group-item"><a href="<?= base_url(); ?>tasks/mark_complete/<?= $task->id ?>">Mark Complete</a>
+        </li>
+        <li class="list-group-item"><a href="<?= base_url(); ?>tasks/mark_pending/<?= $task->id ?>">Mark Pending</a>
+        </li>
 
-
-    <tr>
-
-        <td>
-            <div class="task-name">
-                <?=  $task->task_name;?>
-            </div>
-            <div class="task-action">
-                <a href="<?= base_url();?>tasks/update_tasks/<?= $task->id?>">Edit</a>
-                <a href="<?= base_url();?>tasks/delete/<?= $task->project_id?>/<?= $task->id;?>">Delete</a>
-
-            </div>
-
-        </td>
-
-
-        <td><? echo $task->task_body; ?></td>
-        <td><? echo $task->date_created; ?></td>
-        <td><a href="<?= base_url();?>tasks/mark_complete/<?= $task->id?>">Mark Complete</a></td>
-        <td><a href="<?= base_url();?>tasks/mark_pending/<?= $task->id?>">Mark Pending</a></td>
-    </tr>
-
-
-    </tbody>
-
-</table>
+    </ul>
+</div>

@@ -7,7 +7,8 @@
 
     <?php echo form_open('index.php/users/register',$attributes);?>
     <div class="form-group"><?php echo form_label('First name');?>
-        <?php $data = array('class'=>'form-control','name'=>'first_name','placeholder'=>'Enter First Name')
+        <?php $data = array('class'=>'form-control','name'=>'first_name','placeholder'=>'Enter First Name',
+        'value'=>set_value('first_name'))
         ?>
         <?php echo form_input($data);?>
     </div>
@@ -15,7 +16,8 @@
     <div class="form-group"><?php echo form_label('Last Name');?>
         <?php
         $data = array(
-        'class'=>'form-control','name'=>'last_name','placeholder'=>'Enter Last Name'
+        'class'=>'form-control','name'=>'last_name','placeholder'=>'Enter Last Name',
+        'value'=>set_value('last_name')
         )
         ?>
 
@@ -26,7 +28,8 @@
         <?php echo form_label('Email');?>
         <?php
         $data = array(
-        'class'=>'form-control','name'=>'email','placeholder'=>'Enter Email'
+        'class'=>'form-control','name'=>'email','placeholder'=>'Enter Email',
+        'value'=>set_value('email')
         )
         ?>
 
@@ -35,7 +38,8 @@
     <div class="form-group"><?php echo form_label('Username');?>
         <?php
         $data = array(
-        'class'=>'form-control','name'=>'username','placeholder'=>'Enter Username'
+        'class'=>'form-control','name'=>'username','placeholder'=>'Enter Username',
+        'value'=>set_value('username')
         )
         ?>
 
